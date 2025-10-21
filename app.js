@@ -1,17 +1,10 @@
-let titulo = document.querrySelector('h1);');
-titulo.innerHTML = 'jogo do número secreto';
+let listaDeNumerosSorteados = [];
+let numeroLimite = 10;
+let numeroSecreto = gerarNumeroAleatorio();
+let tentativas = 1;
 
-let paragrafo = document.querySelector('p');
-paragrafo.innerHTML = 'escolha um número entre 1 e 10';
-
-function exibirTextoNaTela() {
-    let camplo = document.querySelector(tag);
-    camplo.inneHTML = texto;
-}
-
-exibirTextoNaTela('h1')
-exibirTextoNaTela('p')
-
-function verificarChute() {
-    
+function exibirTextoNaTela(tag, texto) {
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
